@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Rail - Train Booking Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #fceabb, #f8b500);
+      color: #222;
+    }
+
+    nav {
+      background-color: #6a1b9a;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 8px 14px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ab47bc;
+      color: #fff;
+      border-radius: 6px;
+    }
+
+    header {
+      background-image: url('train-banner.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    header h1 {
+      font-size: 3.2em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+      color: #4a148c;
+      border-bottom: 2px solid #ce93d8;
+      padding-bottom: 5px;
+    }
+
+    .card {
+      background-color: #f3e5f5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4a148c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#book">Book Ticket</a>
+    <a href="#routes">Routes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Express Rail</h1>
+    <p>Your Reliable Train Booking Partner</p>
+  </header>
+
+  <div class="section" id="book">
+    <h2>Book Your Journey</h2>
+    <div class="card">
+      <p>Choose source, destination, travel date and class to book your tickets easily and securely. Enjoy a hassle-free booking experience with our simple and intuitive interface that lets you find and reserve seats in seconds.</p>
+    </div>
+  </div>
+
+  <div class="section" id="routes">
+    <h2>Popular Routes</h2>
+    <div class="card">
+      <ul>
+        <li>bbu - Mumbai</li>
+        <li>Varanasi - Chennai</li>
+        <li>kolkata- Hyderabad</li>
+        <li>Patna - Varanasi</li>
+      </ul>
+      <p>These routes are popular for both business and leisure travelers, offering scenic landscapes and comfortable journeys. Whether it's a short trip or an overnight journey, Express Rail has got you covered.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Why Choose Express Rail?</h2>
+    <div class="card">
+      <p>We bring you a modern and responsive booking system designed for seamless access across all devices. Our user-friendly platform ensures that your journey starts smoothly from the moment you plan your trip.</p>
+      <p>With real-time availability, instant booking confirmation, and 24/7 support, Express Rail is your trusted companion for train travel in India.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Train Experience Gallery</h2>
+    <div class="gallery">
+      <img src="train1.jpg" alt="Train Exterior">
+      <img src="interior1.jpg" alt="Train Interior">
+      <img src="scenic1.jpg" alt="Scenic Journey">
+      <img src="platform.jpg" alt="Railway Platform">
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="card">
+      <p>Email: support@expressrail.com</p>
+      <p>Phone: +91-8603096108</p>
+      <p>Address: Express Rail HQ, Connaught Place, New Delhi, India</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Express Rail. All rights reserved.</p>
+  </footer>
+</body>
+</html>
